@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;500&display=swap");
+.login-headder {
+  padding: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.578);
+  border-radius: 5px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.login-headder img {
+  max-width: 100%;
+  height: 100%;
+}
+.login-headder h3 {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+.login-container {
+  width: 100%;
+  border-radius: 5px;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.login-container.ripple {
+  border: 2px solid #fff;
+}
+
+.login-camera-left {
+  width: 65%;
+}
+
+.inverted {
+  transform: scaleX(-1);
+}
+
+.camera-view {
+  margin-top: 80px; 
+  margin-left: 50px;
+}
+
+.student-detail-right {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start; 
+  margin-top: 20px; 
+}
+.student-detail-right .card p {
+  width: 600px;
+  font-size: 35px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: #fff;
+}
+
+.student-detail-right .card {
+  margin-top: 150px; 
+  margin-right: 80px;
+}
+
+.student-detail-right .card #student-name {
+  font-size: 50px;
+  background: linear-gradient(
+    to right,
+    #6d6d6d,
+    #fff,
+    #ffffff
+  ); /* Replace with your desired gradient colors */
+  -webkit-background-clip: text; /* For Webkit browsers (Chrome, Safari) */
+  color: transparent; /* Make the text transparent */
+}
+
+.success-ripple,
+.red-ripple {
+  animation: ripple 0.8s linear;
+  /* Make it circular */
+}
+
+.red-ripple {
+  animation: ripple-red 0.8s linear;
+  /* Red ripple overlay */
+}
+@keyframes ripple {
+  from {
+    background-color: #eee; /* Initial background color */
+  }
+  to {
+    background-color: rgba(49, 205, 49, 0.347); /* Green ripple overlay */
+  }
+}
+
+@keyframes ripple-red {
+  from {
+    background-color: #eee; /* Initial background color */
+  }
+  to {
+    background-color: rgba(255, 0, 0, 0.5); /* Red ripple overlay */
+  }
+}
+.login-headder a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #fff;
+}
